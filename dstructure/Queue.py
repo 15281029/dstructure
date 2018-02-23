@@ -102,9 +102,6 @@ class Queue(object):
             self.display()
             return tval
 
-    def dispatch(self):
-        pass
-
     @property
     def exit(self):
         p = self.__cursor
