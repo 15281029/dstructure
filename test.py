@@ -3,7 +3,7 @@ from dstructure.Link import Link
 from dstructure.Queue import Queue
 
 # 单向链表测试
-print('-'*20, '\n单项链表测试')
+print('-'*20, '\n单向链表测试')
 print('-'*20)
 l = Link([i for i in reversed(range(5))])
 # 在链表尾部追加元素5
@@ -28,22 +28,30 @@ l.clear()
 print('-'*20, '\n双向链表测试')
 print('-'*20)
 dl = DLink([i for i in range(5)])
+dl.display()
 # 在链表尾部添加
 dl.append(5)
+dl.display()
 # 在链表头部添加
 dl.append(-1, head=True)
+dl.display()
 # 得到元素下标对应的元素值
 print(dl.get(0))
 # 设置元素下标对应的元素值
 dl.set(-2, 0)
+dl.display()
 # 插入链表，不加参数index 默认为尾部
 dl.insert(6)
+dl.display()
 # 插入链表，加index参数即为该位置
 dl.insert(-3, 5)
+dl.display()
 # 删除元素特定下标的元素
 dl.delete(0)
+dl.display()
 # 清除整个链表
 dl.clear()
+dl.display()
 
 
 # 队列测试
