@@ -23,7 +23,7 @@ class DLink(object):
                 node.head = p
                 p = p.next
         elif isinstance(it, Iterable) and len(it) == 0:
-            self.__head = LinkNode(None)
+            self.__head = None
         else:
             print("[{0}] para Error!".format(sys._getframe().f_code.co_name))
             return
